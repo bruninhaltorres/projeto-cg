@@ -1,6 +1,7 @@
-CMakeFiles/projeto.dir/main.c.obj: C:\CG\main.c c:\mingw\include\gl\gl.h \
- C:/CG/freeglut/include/GL/glut.h \
- C:/CG/freeglut/include/GL/freeglut_std.h c:\mingw\include\windows.h \
+CMakeFiles/projeto.dir/main.c.obj: C:\projeto-cg\main.c \
+ c:\mingw\include\gl\gl.h C:/projeto-cg/freeglut/include/GL/glut.h \
+ C:/projeto-cg/freeglut/include/GL/freeglut_std.h \
+ c:\mingw\include\windows.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\stdarg.h \
  c:\mingw\include\windef.h c:\mingw\include\w32api.h \
  c:\mingw\include\sdkddkver.h c:\mingw\include\winnt.h \
@@ -15,4 +16,4 @@ CMakeFiles/projeto.dir/main.c.obj: C:\CG\main.c c:\mingw\include\gl\gl.h \
  c:\mingw\include\winnls.h c:\mingw\include\winver.h \
  c:\mingw\include\winnetwk.h c:\mingw\include\winreg.h \
  c:\mingw\include\winsvc.h c:\mingw\include\gl\glu.h \
- c:\mingw\include\stdlib.h C:\CG\drawObj.h
+ c:\mingw\include\stdlib.h C:\projeto-cg\drawObj.h

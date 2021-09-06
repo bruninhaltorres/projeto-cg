@@ -1,3 +1,3 @@
-C:/CG/build/CMakeFiles/edit_cache.dir
-C:/CG/build/CMakeFiles/projeto.dir
-C:/CG/build/CMakeFiles/rebuild_cache.dir
+C:/projeto-cg/build/CMakeFiles/edit_cache.dir
+C:/projeto-cg/build/CMakeFiles/projeto.dir
+C:/projeto-cg/build/CMakeFiles/rebuild_cache.dir

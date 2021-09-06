@@ -34,6 +34,8 @@ CMakeFiles/projeto.dir/drawObj.c.obj
  C:/MinGW/include/winsvc.h
  C:/MinGW/include/GL/glu.h
  C:/MinGW/include/stdlib.h
+ C:/MinGW/include/stdio.h
+ C:/MinGW/include/sys/types.h
  C:/projeto-cg/drawObj.h
 
 CMakeFiles/projeto.dir/main.c.obj

@@ -33,6 +33,8 @@ CMakeFiles/projeto.dir/drawObj.c.obj: ../drawObj.c \
   C:/MinGW/include/winsvc.h \
   C:/MinGW/include/GL/glu.h \
   C:/MinGW/include/stdlib.h \
+  C:/MinGW/include/stdio.h \
+  C:/MinGW/include/sys/types.h \
   ../drawObj.h
 
 CMakeFiles/projeto.dir/main.c.obj: ../main.c \
@@ -133,6 +135,10 @@ C:/MinGW/include/winver.h:
 C:/MinGW/include/GL/glu.h:
 
 C:/MinGW/include/stdlib.h:
+
+C:/MinGW/include/stdio.h:
+
+C:/MinGW/include/sys/types.h:
 
 ../drawObj.h:
 

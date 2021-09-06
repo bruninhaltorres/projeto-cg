@@ -16,4 +16,5 @@ CMakeFiles/projeto.dir/drawObj.c.obj: C:\projeto-cg\drawObj.c \
  c:\mingw\include\winnls.h c:\mingw\include\winver.h \
  c:\mingw\include\winnetwk.h c:\mingw\include\winreg.h \
  c:\mingw\include\winsvc.h c:\mingw\include\gl\glu.h \
- c:\mingw\include\stdlib.h C:\projeto-cg\drawObj.h
+ c:\mingw\include\stdlib.h c:\mingw\include\stdio.h \
+ c:\mingw\include\sys/types.h C:\projeto-cg\drawObj.h

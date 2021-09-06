@@ -36,8 +36,8 @@ void drawHouse(){
     glPushMatrix(); // insere a matriz de transformação corrente na pilha, ou seja, delimita, junto da glPopMatrix() o conjunto de transformações 
     glEnable(GL_TEXTURE_2D); // habilita o uso de texturas
     glTranslatef(0, 0.5, 0); // translação
-    aplyTexture(2); // QUANDO CHEGA AQUI A JANELA FECHA SOZINHA.
-    //drawObject(17, 1, 1, 1, 1);
+    // aplyTexture(2); // QUANDO CHEGA AQUI A JANELA FECHA SOZINHA.
+    drawObject(17, 1, 1, 1, 0);
     glDisable(GL_TEXTURE_2D);
     glPopMatrix();
     /*---------------------------*/

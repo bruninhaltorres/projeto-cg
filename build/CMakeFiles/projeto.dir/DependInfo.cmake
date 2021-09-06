@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/projeto-cg/drawObj.c" "CMakeFiles/projeto.dir/drawObj.c.obj" "gcc" "CMakeFiles/projeto.dir/drawObj.c.obj.d"
-  "C:/projeto-cg/main.c" "CMakeFiles/projeto.dir/main.c.obj" "gcc" "CMakeFiles/projeto.dir/main.c.obj.d"
+  "C:/Users/eiren/OneDrive/Github/2-Faculdade/projeto-cg/drawObj.c" "CMakeFiles/projeto.dir/drawObj.c.obj" "gcc" "CMakeFiles/projeto.dir/drawObj.c.obj.d"
+  "C:/Users/eiren/OneDrive/Github/2-Faculdade/projeto-cg/main.c" "CMakeFiles/projeto.dir/main.c.obj" "gcc" "CMakeFiles/projeto.dir/main.c.obj.d"
   )
 
 # Targets to which this target links.

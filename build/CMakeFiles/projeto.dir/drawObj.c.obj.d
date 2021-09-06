@@ -1,6 +1,8 @@
-CMakeFiles/projeto.dir/drawObj.c.obj: C:\projeto-cg\drawObj.c \
- c:\mingw\include\gl\gl.h C:/projeto-cg/freeglut/include/GL/glut.h \
- C:/projeto-cg/freeglut/include/GL/freeglut_std.h \
+CMakeFiles/projeto.dir/drawObj.c.obj: \
+ C:\Users\eiren\OneDrive\Github\2-Faculdade\projeto-cg\drawObj.c \
+ c:\mingw\include\gl\gl.h \
+ C:/Users/eiren/OneDrive/Github/2-Faculdade/projeto-cg/freeglut/include/GL/glut.h \
+ C:/Users/eiren/OneDrive/Github/2-Faculdade/projeto-cg/freeglut/include/GL/freeglut_std.h \
  c:\mingw\include\windows.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\stdarg.h \
  c:\mingw\include\windef.h c:\mingw\include\w32api.h \
@@ -17,4 +19,5 @@ CMakeFiles/projeto.dir/drawObj.c.obj: C:\projeto-cg\drawObj.c \
  c:\mingw\include\winnetwk.h c:\mingw\include\winreg.h \
  c:\mingw\include\winsvc.h c:\mingw\include\gl\glu.h \
  c:\mingw\include\stdlib.h c:\mingw\include\stdio.h \
- c:\mingw\include\sys/types.h C:\projeto-cg\drawObj.h
+ c:\mingw\include\sys/types.h \
+ C:\Users\eiren\OneDrive\Github\2-Faculdade\projeto-cg\drawObj.h

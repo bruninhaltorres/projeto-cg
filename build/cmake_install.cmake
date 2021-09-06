@@ -1,4 +1,4 @@
-# Install script for directory: C:/projeto-cg
+# Install script for directory: C:/Users/eiren/OneDrive/Github/2-Faculdade/projeto-cg
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/projeto-cg/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/eiren/OneDrive/Github/2-Faculdade/projeto-cg/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

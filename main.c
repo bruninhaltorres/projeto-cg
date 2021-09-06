@@ -5,9 +5,7 @@
 #define WINDOW_WIDHT 640
 #define WINDOW_HEIGHT 480
 
-void display() {
-    drawHouse();
-}
+void display();
 
 void setup_lighting() {
 
@@ -36,4 +34,8 @@ int main(int argc, char** argv) {
     glutMainLoop();
 
     return 0;
+}
+
+void display() {
+    drawHouse();
 }

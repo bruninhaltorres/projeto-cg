@@ -6,7 +6,7 @@
 #define WINDOW_HEIGHT 480
 
 void display() {
-
+    drawHouse();
 }
 
 void setup_lighting() {

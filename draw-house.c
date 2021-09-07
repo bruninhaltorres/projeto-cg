@@ -85,8 +85,8 @@ void init(void) {
     
     glMatrixMode(GL_PROJECTION); //especifica qual matriz que estamos usando
                                 //GL_PROJECTION: aplica operações de matriz subsequentes à pilha de matriz de projeção. 
-    glLoadIdentity();
-    glOrtho(0.0, 1000.0, 0.0, 1000.0, 0.0, 1000.0);
+    glLoadIdentity(); //seta a minha matriz com sua matriz identidade equivalente 
+    glOrtho(0.0, 0.0, 0.0, 0.0, 0.0, 0.0);
 
 }
 

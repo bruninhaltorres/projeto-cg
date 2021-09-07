@@ -13,23 +13,23 @@ Vec3 *NORMALS = NULL;
 Vec2 *TEX_COORDS = NULL;
 Vecs **vecs = NULL;
 
-void aplyTexture(int index){
-    if (0 <= index <= MAX_TEXTURE)
-    {
-        if (textures[index])
-        {
-            int textureID = textures[index]->textureID;
-            glBindTexture(GL_TEXTURE_2D, textureID); // define a textura
-            // GL_TEXTURE_2D ==> define que será usada uma textura 2D (bitmaps)
-            // textureID ==> define o número da textura
-        }
-    }
-    else
-    {
-        printf("Indice de textura inválido.");
-        exit(1);
-    }
-}
+// void aplyTexture(int index){
+//     if (0 <= index <= MAX_TEXTURE)
+//     {
+//         if (textures[index])
+//         {
+//             int textureID = textures[index]->textureID;
+//             glBindTexture(GL_TEXTURE_2D, textureID); // define a textura
+//             // GL_TEXTURE_2D ==> define que será usada uma textura 2D (bitmaps)
+//             // textureID ==> define o número da textura
+//         }
+//     }
+//     else
+//     {
+//         printf("Indice de textura inválido.");
+//         exit(1);
+//     }
+// }
 
 void drawHouse(){
     /*----------chão--------------*/
@@ -53,12 +53,12 @@ void drawObject(int index, float r, float g, float b, int ap_texture) {
         TEX_COORDS = vecs[index]->TEX_COORDS;
         VERTEX_COUNT = vecs[index]->VERTEX_COUNT;
         
-        if(ap_texture) {
-            OFF_SET_COL = 0;
-        }
-        else {
-            OFF_SET_COL = 0.1;
-        }
+        // if(ap_texture) {
+        //     OFF_SET_COL = 0;
+        // }
+        // else {
+        //     OFF_SET_COL = 0.1;
+        // }
 
         glBegin(GL_TRIANGLES);
 	    for(i = 0; i < VERTEX_COUNT;i++){

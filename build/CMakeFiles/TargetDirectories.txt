@@ -1,3 +1,0 @@
-C:/Users/eiren/OneDrive/Github/2-Faculdade/projeto-cg/build/CMakeFiles/edit_cache.dir
-C:/Users/eiren/OneDrive/Github/2-Faculdade/projeto-cg/build/CMakeFiles/projeto.dir
-C:/Users/eiren/OneDrive/Github/2-Faculdade/projeto-cg/build/CMakeFiles/rebuild_cache.dir

@@ -7,13 +7,26 @@ void display(void) {
 
     glClear(GL_COLOR_BUFFER_BIT);
 
-    //wall left-right
-    // glColor3ub (46,139,87);
-    // glBegin(GL_POLYGON);
-    // glVertex3f (3, 250, 0);
-    // glVertex3f (390, 350, 0);
-    // glVertex3f (390, 1000, 0);
-    // glVertex3f (0, 1000, 0);
+    //paredes da cozinha
+
+    //parede esquerda
+    glColor3ub (255, 255, 255);
+    glBegin(GL_POLYGON);
+    glVertex3f (3, 250, 0);
+    glVertex3f (390, 350, 0);
+    glVertex3f (390, 1000, 0);
+    glVertex3f (0, 1000, 0);
+    glEnd();
+
+    //parede do meio
+    glColor3ub (139, 99, 108);
+    glBegin(GL_POLYGON);
+    glVertex3f (390, 350, 0);
+    glVertex3f (1000, 250, 0);
+    glVertex3f (1000, 1000, 0);
+    glVertex3f (0, 0, 0); //quando comenta essa linha a parede deita
+    glEnd();
+
 
     //processamento de rotina de coloração do open gl
     p = 1 - d;
@@ -86,7 +99,7 @@ void init(void) {
     glMatrixMode(GL_PROJECTION); //especifica qual matriz que estamos usando
                                 //GL_PROJECTION: aplica operações de matriz subsequentes à pilha de matriz de projeção. 
     glLoadIdentity(); //seta a minha matriz com sua matriz identidade equivalente 
-    glOrtho(0.0, 0.0, 0.0, 0.0, 0.0, 0.0);
+    glOrtho(0.0, 1000.0, 0.0, 1000.0, 0.0, 1000.0);
 
 }
 

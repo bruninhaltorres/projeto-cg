@@ -10,7 +10,7 @@ void display(void) {
     //paredes da cozinha
 
     //parede esquerda
-    glColor3ub (255, 255, 255);
+    glColor3ub (139, 99, 108);
     glBegin(GL_POLYGON);
     glVertex3f (3, 250, 0);
     glVertex3f (390, 350, 0);
@@ -19,13 +19,183 @@ void display(void) {
     glEnd();
 
     //parede do meio
-    glColor3ub (139, 99, 108);
+    glColor3ub (139, 99, 120);
     glBegin(GL_POLYGON);
     glVertex3f (390, 350, 0);
     glVertex3f (1000, 250, 0);
     glVertex3f (1000, 1000, 0);
-    glVertex3f (0, 0, 0); //quando comenta essa linha a parede deita
+    glVertex3f (390, 1000, 0);
     glEnd();
+
+    //teto
+    glColor3ub (155,142,126);
+    glBegin(GL_POLYGON);
+    glVertex3f (650, 1000, 0);
+    glVertex3f (390, 950, 0);
+    glVertex3f (180, 1000, 0);
+    glEnd();
+
+    //wall right-right
+    // glColor3ub (46,139,87);
+    // glBegin(GL_POLYGON);
+    // glVertex3f (600, 300, 0);
+    // glVertex3f (1000, 250, 0);
+    // glVertex3f (1000, 1000, 0);
+    // glVertex3f (600, 1000, 0);
+    // glEnd();
+
+    //floor - white
+    glColor3ub (71,71,71);
+    glBegin(GL_POLYGON);
+    glVertex3f (0, 0, 0);
+    glVertex3f (0, 250, 0);
+    glVertex3f (390, 350, 0);
+    glVertex3f (1000, 250, 0);
+    glVertex3f (1000, 0, 0);
+    glEnd();
+
+    //window left
+    glColor3ub (255,255,255);
+    glBegin(GL_POLYGON);
+    glVertex3f (230, 500, 0);
+    glVertex3f (325, 520, 0);
+    glVertex3f (325, 900, 0);
+    glVertex3f (230, 900, 0);
+    glEnd();
+
+    //window left - right inner
+    glColor3ub (131,102,92);
+    glBegin(GL_POLYGON);
+    glVertex3f (310, 890, 0);
+    glVertex3f (325, 900, 0);
+    glVertex3f (325, 520, 0);
+    glVertex3f (310, 525, 0);
+    glEnd();
+
+    //window left - bottom
+    glColor3ub (195,182,166);
+    glBegin(GL_POLYGON);
+    glVertex3f (230, 500, 0);
+    glVertex3f (325, 520, 0);
+    glVertex3f (310, 525, 0);
+    glVertex3f (230, 510, 0);
+    glEnd();
+
+    //window left - top
+    glColor3ub (195,182,166);
+    glBegin(GL_POLYGON);
+    glVertex3f (230, 900, 0);
+    glVertex3f (325, 900, 0);
+    glVertex3f (310, 890, 0);
+    glVertex3f (230, 890, 0);
+    glEnd();
+
+    //window left grill-middle-vertical
+    glColor3ub (0,0,0);
+    glBegin(GL_POLYGON);
+    glVertex3f (275, 512, 0);
+    glVertex3f (280, 512, 0);
+    glVertex3f (280, 895, 0);
+    glVertex3f (275, 895, 0);
+    glEnd();
+
+    //window left grill-bottom
+    glColor3ub (0,0,0);
+    glBegin(GL_POLYGON);
+    glVertex3f (230, 600, 0);
+    glVertex3f (320, 615, 0);
+    glVertex3f (320, 625, 0);
+    glVertex3f (230, 610, 0);
+    glEnd();
+
+    //window left grill-middle
+    glColor3ub (0,0,0);
+    glBegin(GL_POLYGON);
+    glVertex3f (230, 700, 0);
+    glVertex3f (320, 715, 0);
+    glVertex3f (320, 725, 0);
+    glVertex3f (230, 710, 0);
+    glEnd();
+
+    //window left grill-top-horizontal
+    glColor3ub (0,0,0);
+    glBegin(GL_POLYGON);
+    glVertex3f (230, 800, 0);
+    glVertex3f (320, 810, 0);
+    glVertex3f (320, 820, 0);
+    glVertex3f (230, 810, 0);
+    glEnd();
+
+    //window right
+    glColor3ub (255,255,255);
+    glBegin(GL_POLYGON);
+    glVertex3f (1000, 500, 0);
+    glVertex3f (900, 500, 0);
+    glVertex3f (900, 900,0);
+    glVertex3f (1000,900, 0);
+    glEnd();
+    //window right-inner bottom
+    glColor3ub (105,87,62);
+    glBegin(GL_POLYGON);
+    glVertex3f (1000, 500, 0);
+    glVertex3f (900, 500, 0);
+    glVertex3f (910, 510,0);
+    glVertex3f (1000,510, 0);
+    glEnd();
+    //window right-inner left
+    glColor3ub (131,102,92);
+    glBegin(GL_POLYGON);
+    glVertex3f (900, 900, 0);
+    glVertex3f (910, 890, 0);
+    glVertex3f (910, 510,0);
+    glVertex3f (900,500, 0);
+    glEnd();
+
+    //window right-inner top
+    glColor3ub (102,87,62);
+    glBegin(GL_POLYGON);
+    glVertex3f (900, 900, 0);
+    glVertex3f (910, 890, 0);
+    glVertex3f (1000, 890,0);
+    glVertex3f (1000,900, 0);
+    glEnd();
+
+    //window right grill bottom-vertical
+    glColor3ub (0,0,0);
+    glBegin(GL_POLYGON);
+    glVertex3f (905, 600, 0);
+    glVertex3f (1000, 600, 0);
+    glVertex3f (1000, 610,0);
+    glVertex3f (905,610, 0);
+    glEnd();
+
+    //window right grill middle-vertical
+    glColor3ub (0,0,0);
+    glBegin(GL_POLYGON);
+    glVertex3f (905, 700, 0);
+    glVertex3f (1000, 700, 0);
+    glVertex3f (1000, 710,0);
+    glVertex3f (905,710, 0);
+    glEnd();
+
+    //window right grill top-vertical
+    glColor3ub (0,0,0);
+    glBegin(GL_POLYGON);
+    glVertex3f (905, 800, 0);
+    glVertex3f (1000, 800, 0);
+    glVertex3f (1000, 810,0);
+    glVertex3f (905,810, 0);
+    glEnd();
+
+    //window right grill bottom-horizontal
+    glColor3ub (0,0,0);
+    glBegin(GL_POLYGON);
+    glVertex3f (965, 505, 0);
+    glVertex3f (965, 895, 0);
+    glVertex3f (970, 895,0);
+    glVertex3f (970,505, 0);
+    glEnd();
+
 
 
     //processamento de rotina de coloração do open gl

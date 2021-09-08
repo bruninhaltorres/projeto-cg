@@ -1,12 +1,17 @@
 #include <GL/gl.h>
 #include <GL/glut.h>
+#include <stdio.h>
+#include <math.h>
 
 #include "camera.h"
 #include "movimento-camera.h"
 #include "drawObj.h"
+#include "import-objetos.h"
+#include "stb_image.h"
 
-#define WINDOW_WIDTH 1280
-#define WINDOW_HEIGHT 720
+
+#define WINDOW_WIDTH 1366
+#define WINDOW_HEIGHT 768
 
 //#define DEBUG
 #ifdef DEBUG
@@ -15,7 +20,7 @@
 #define D(x)
 #endif
 
-int d = 20, p, gx=0, hy=0, hxc=496, gyc=795, gyc, ha, gb;
+// int d = 20, p, gx=0, hy=0, hxc=496, gyc=795, gyc, ha, gb;
 
 float* cam_pos;
 float* cam_center;
@@ -28,7 +33,7 @@ void display();
 int main(int argc, char** argv) { // argc: numero de parâmetros fornecidos
                                   // argv: contém as strings.
     glutInit(&argc, argv); //glutInit: inicializa a biblioteca GLUT
-    glutInitDisplayMode (GLUT_SINGLE | GLUT_RGB); //displayMode: indico que vou usar o OpenGL em janela
+    glutInitDisplayMode (GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH); //displayMode: indico que vou usar o OpenGL em janela
                                                 //GLUT_SINGLE: bit mask ativado para usar apenas uma única janela
                                                 //GLUT_RGB: coloco minha janela no modo RGBA/RGB
     glutInitWindowSize (WINDOW_WIDTH, WINDOW_HEIGHT); //defino o tamanho da janela
@@ -43,6 +48,9 @@ int main(int argc, char** argv) { // argc: numero de parâmetros fornecidos
     glDepthRange(0.0f, 1.0f);
 
     cam = (Camera*)init_camera();
+    init_obj_vecs();
+
+    load_obj_display("objetos/mesa/mesa.obj", 0);
 
     glutDisplayFunc(display);
     glutKeyboardFunc(moveCam);
@@ -57,7 +65,7 @@ int main(int argc, char** argv) { // argc: numero de parâmetros fornecidos
 void display() {
 
     glClear(GL_COLOR_BUFFER_BIT  | GL_DEPTH_BUFFER_BIT);
-    glClearColor(0.0, 0.0, 0.0, 0.0); //limpa o buffer de cores e especifica o rgb
+    // glClearColor(0.0, 0.0, 0.0, 0.0); //limpa o buffer de cores e especifica o rgb
     int i;
 
     glMatrixMode ( GL_PROJECTION ) ;
@@ -91,6 +99,18 @@ void display() {
 
         glPopMatrix();
     )
-    //drawHouse();
+
+    //mesa
+    glPushMatrix();
+    glTranslatef ( -15 , 1.5 , -72.5 ) ;
+    glScalef(2.0, 2.0, 2.0);
+    glRotatef(-90, 0, 1, 0);
+    draw_objects(15, 0.9, 0, 0.9);
+    glPopMatrix();
+
+
+    draw_house();
     glFlush(); // enviar para o hardware todos os comandos emitidos até ao momento
+    glutSwapBuffers () ;
+    glutPostRedisplay();
 }

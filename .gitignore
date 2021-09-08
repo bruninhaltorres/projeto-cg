@@ -1,2 +1,4 @@
-CMakeLists.txt
+.gitignore
+.vscode
 build
+CMakeLists.txt

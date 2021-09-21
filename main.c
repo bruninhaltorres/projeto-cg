@@ -55,10 +55,9 @@ int main(int argc, char** argv) {
 
     load_obj_display("C:/projeto-cg/models/caneca.obj", 2);
 
-    load_obj_display("C:/projeto-cg/models/sofa.obj", 6);
+    load_obj_display("C:/projeto-cg/models/geladeira.obj", 6);
 
     load_obj_display("C:/projeto-cg/models/ventilador/helice.obj", 7);
-    // load_obj_display("C:/projeto-cg/models/ventilador/base_sem_helice.obj", 8);
 
     load_obj_display("C:/projeto-cg/models/lixeira.obj", 11);
 
@@ -96,8 +95,7 @@ int main(int argc, char** argv) {
     load_texture("C:/projeto-cg/textures/new_piso.jpg", 2);
     load_texture("C:/projeto-cg/textures/new_parede.jpg", 3);
     load_texture("C:/projeto-cg/textures/textura_cama.jpg", 4);
-    load_texture("C:/projeto-cg/textures/textura_lencol.jpg", 5);
-    load_texture("C:/projeto-cg/textures/textura_tecido_branco.jpg", 6);
+    load_texture("C:/projeto-cg/textures/casa.jpeg", 5);
     load_texture("C:/projeto-cg/textures/texturademadeira.jpg", 7);
     load_texture("C:/projeto-cg/textures/textura_livro.jpg", 8);
     
@@ -222,7 +220,6 @@ void display() {
     glPushMatrix();
     glTranslatef ( 20 , 15 , -62 ) ;
     glScalef(7.0, 7.0, 7.0);
-    // glRotatef(-90, 0, 1, 0);
     draw_objects(30, 1, 0, 0, 1);
     glPopMatrix();
 

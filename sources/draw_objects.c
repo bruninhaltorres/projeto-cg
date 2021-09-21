@@ -157,10 +157,12 @@ void draw_helix() {
 }
 
 void draw_door() {
+        // // Parede bonita:
         // glTranslatef ( -67, 0.6 , -5.3 ) ;
         // glRotatef(DOOR_ROT, 0, 1, 0);//gira a porta conforme foi aberta/fechada
-        
         // glScalef(8, 8, 8);
+
+        // Parede feia:
         glTranslatef ( -43 , 0.6 , -72 ) ;
         glRotatef(DOOR_ROT, 0, 1, 0);
         glScalef(0.70, 0.8, 1);
@@ -220,7 +222,6 @@ void draw_house() {
     glPushMatrix();
     glEnable( GL_TEXTURE_2D ); 
     aply_texture(3);
-    
     glTranslatef(0, 0, -0.5);
     //glRotatef(180, 0, 1, 0);
     draw_objects(21, 1, 1, 1, 1);
@@ -252,7 +253,7 @@ void change_door_state() {
         DOOR_ROT_DIR = -DOOR_ROT_DIR;
     }
     DOOR_ROT += DOOR_ROT_DIR;
-    DOOR_ROT%= 360;
+    DOOR_ROT %= 360;
 }
 
 void change_window_state() {
